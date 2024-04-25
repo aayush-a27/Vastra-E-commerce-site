@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: "kanit";
+}
+#nav{
+    height: 10%;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    height: 100%;
+    width: 30%;
+    background-image: url(vastra.png);
+    background-position: center;
+    background-size: 200% 200%;
+}
+#text{
+    height: 100%;
+    width: 250%;
+    font-size: 50px;
+    font-family: "kanit";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#container1{
+    height: 100%;
+    width: 70%;
+    
+}
+.container-content{
+    height: 20%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 5%;
+}
+#add-title{
+    height: 20%;
+    font-size: 30px;
+}
+#add-content{
+    height: 80%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+#user-name{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: start;
+}
+#user-num{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 15px;
+}
+#user-add{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+}
+#pay-title{
+    height: 20%;
+    font-size: 30px;
+}
+#pay-content{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#pay-content h6{
+    height: 30%;
+    width: 150%;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 30px;
+}
+#cashondel{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#pay-content input{
+    height: 20%;
+    width: 20%;
+}
+#review-items{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#review-text{
+    height: 10%;
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20%;
+}
+#review-container{
+    height: 80%;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 20%;
+    overflow: hidden;
+}
+#arrive-date{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-left: 30px;
+}
+#review-box{
+    margin-top: 30px;
+    height: 80%;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#review-box1{
+    height: 100%;
+    width: 60%;
+}
+#pdt-dets{
+    height: 100%;
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pdt-img{
+    height: 100%;
+    width: 40%;
+    margin-left: 30px;
+}
+#product-img{
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#pdt-content{
+    height: 100%;
+    width: 60%;
+}
+#pdt-name{
+    font-family: "kanit";
+    font-size: 30px;
+}
+#pdt-type{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+#pdt-cost{
+    height: 15%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+}
+#pdt-bef-cost{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: line-through;
+}
+#pdt-aft-cost{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#pdt-disc{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#pdt-size{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#pdt-size h3{
+    height: 100%;
+    width: 30%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#size{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 25px;
+}
+#pdt-qty{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#pdt-qty h3{
+    height: 100%;
+    width: 40%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#qty{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 25px;
+}
+#review-box2{
+    height: 100%;
+    width: 40%;
+}
+#del-date{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 25px;
+}
+#del-date h3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-left: 30px;
+}
+#del-date1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+#date1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 23px;
+    gap: 30px;
+}
+#date1 input{
+    height: 30%;
+    width: 20%;
+
+}
+#date-cost1{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 17px;
+    padding-left: 40%;
+}
+#del-date2{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+#date2{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 23px;
+    gap: 30px;
+}
+#date2 input{
+    height: 30%;
+    width: 20%;
+
+}
+#date-cost2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 17px;
+    padding-left: 40%;
+    padding-bottom: 30px;
+}
+#container2{
+    height: 100%;
+    width: 30%;
+}
+#cost-summary{
+    height: 70%;
+    width: 70%;
+    margin-top: 10%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black ;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+#cost-title{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-left: 30px;
+}
+#cost-content{
+    height: 60%;
+    width: 100%;
+    font-size: 20px;
+    flex-direction: column;
+}
+#item-cost{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#product-cost{
+    font-size: larger;
+    margin-left: 50px;
+}
+#del-cost{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#delivery-cost{
+    font-size: larger;
+    margin-left: 50px;
+}
+#total-cost{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#total-cost-summary{
+    font-size: larger;
+    margin-left: 50px;
+}
+#order{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#place-order{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+@keyframes fillcolor{
+    0%{
+        width: 0%;
+        bottom: -100%;
+        right: 100%;
+        
+    }
+    100%{
+        width: 200%;
+        bottom: 0%;
+        right: 0%;
+    }
+    
+}
+@keyframes colorout{
+    0%{
+        width: 200%;
+        bottom: 0%;
+        right: 0%;
+    }
+    100%{
+        width: 0%;
+        bottom: -100%;
+        right: 100%;
+    }
+}
+#cost-summary-color{
+    height: 100%;
+    width: 0%;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    z-index: -1;
+}

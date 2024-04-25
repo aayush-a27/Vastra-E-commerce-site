@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="logo"></div>
+            <h1 id="text">Checkout</h1>
+        </div>
+        <div id="container">
+            <div id="container1">
+                <div class="container-content" id="address">
+                    <div id="add-title">Delivery Address</div>
+                    <div id="add-content">
+                        <div id="user-name"></div>
+                        <div id="user-num"></div>
+                        <div id="user-add"></div>
+                    </div>
+                </div>
+               <div class="container-content" id="payment">
+                    <div id="pay-title">Payment Method</div>
+                    <div id="pay-content">
+                        <div id="cashondel">
+                            <input type="radio" id="cash">
+                            <label for="cash">Cash On Delivery</label>
+                        </div>
+                        <h6>Note : Sorry but online payment is not available, We are working on it </h6>
+                        
+                    </div>
+                </div>
+               <div id="review-items">
+                    <div id="review-text">Review Items And Delivery</div>
+                    <div id="review-container">
+                        <div id="arrive-date">Arriving 6 Apr 2024 </div>
+                        <div id="review-box">
+                            <div id="review-box1">
+                                <div id="pdt-dets">
+                                    <div id="pdt-img">
+                                        <div id="product-img"></div>
+                                    </div>
+                                    <div id="pdt-content">
+                                        <div id="pdt-name"></div>
+                                        <div id="pdt-type"></div>
+                                        <div id="pdt-cost">
+                                            <div id="pdt-aft-cost"></div>
+                                            <div id="pdt-bef-cost"></div>
+                                            <div id="pdt-disc"></div>
+                                        </div>
+                                        <div id="pdt-size">
+                                            <h3>Size :</h3>
+                                            <div id="size"></div>
+                                        </div>
+                                        <div id="pdt-qty">
+                                             <h3>Quantity :</h3>
+                                            <div id="qty"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="review-box2">
+                                <div id="del-date">
+                                    <h3>Delivery Dates</h3>
+                                    <div id="del-date1">
+                                        <div id="date1">
+                                            <input type="radio" id="no-cost-date">
+                                            <label id="freedate" for="no-cost-date">your first date</label>
+                                        </div>
+                                        <div id="date-cost1">
+                                            free home Delivery
+                                        </div>
+                                    </div>
+                                    <div id="del-date2">
+                                        <div id="date2">
+                                            <input type="radio" id="costdate">
+                                            <label for="costdate">Tomorrow</label>
+                                        </div>
+                                        <div id="date-cost2">
+                                            50 rs. for fast delivery
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div id="container2">
+                <div id="cost-summary">
+                    <div id="cost-title">Cost Summary</div>
+                    <div id="cost-content">
+                        <div id="item-cost">
+                            <h3>Product cost :</h3>
+                            <div id="product-cost"></div>
+                        </div>
+                        <div id="del-cost">
+                            <h3>Delivery cost :</h3>
+                            <div id="delivery-cost">50 Rs.</div>
+                        </div>
+                        <div id="total-cost">
+                            <h3>Total cost :</h3>
+                            <div id="total-cost-summary"></div>
+                        </div>
+                    </div>
+                    <div id="order">
+                        <div id="place-order">
+                            Place order
+                        </div>
+                    </div>
+                    <div id="cost-summary-color"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>
