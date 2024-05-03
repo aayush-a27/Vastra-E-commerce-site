@@ -26,11 +26,12 @@ let userIcon = document.getElementById("user");
 let formBlock = document.getElementById("user-login");
 let form = document.getElementById("myform");
 let bag = document.getElementById("bag");
+let popup = document.getElementById("popup");
 var counter = 0;
 let row1 = document.getElementById("row-1");
 let arrOfUserData = [];
 let i = 0;
-
+let orderStatus = localStorage.getItem('orderStatus');
 fetch(
   `https://api.artic.edu/api/v1/artworks/search?q=cats&query[term][is_public_domain]=true`
 )
@@ -258,23 +259,23 @@ style_container.addEventListener("mouseout", function (event) {
   }
 });
 
-function wishlistcall(){
-    wishlist.addEventListener("click", function () {
-        if (wishlistContent.style.display === "block") {
-            wishlistContent.style.display = "none";
-        } 
-        else {
-            wishlistContent.style.display = "block";
-        }
-    });
+function wishlistcall() {
+  wishlist.addEventListener("click", function () {
+    if (wishlistContent.style.display === "block") {
+      wishlistContent.style.display = "none";
+    }
+    else {
+      wishlistContent.style.display = "block";
+    }
+  });
 }
 wishlistcall();
 
 
-let PrintWishlist=sessionStorage.getItem("wishlistArr");
-let multiplewishlsit=[];
-if(PrintWishlist){
-    multiplewishlsit.push(PrintWishlist);
+let PrintWishlist = sessionStorage.getItem("wishlistArr");
+let multiplewishlsit = [];
+if (PrintWishlist) {
+  multiplewishlsit.push(PrintWishlist);
 }
 console.log(multiplewishlsit);
 
@@ -351,3 +352,8 @@ userIcon.addEventListener("click", function (event) {
     i = i - 1;
   }
 });
+console.log(orderStatus);
+if (orderStatus === "buyed") {
+  popup.style.animationName='pop'
+  popup.style.display='flex'
+}

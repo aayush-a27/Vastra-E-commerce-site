@@ -49,6 +49,7 @@ let deliveryCost=document.getElementById("delivery-cost");
 let costSummary=document.getElementById("cost-summary");
 let costSummaryColor=document.getElementById("cost-summary-color");
 let placeOrder=document.getElementById("place-order");
+let orderStatus='';
 let cost=0;
 pdtname.textContent=pdtDetails[1];
 pdttype.textContent=pdtDetails[2];
@@ -105,3 +106,8 @@ costSummary.addEventListener('mouseleave', function() {
   placeOrder.style.backgroundColor="white";
   placeOrder.style.color="black";
 });
+placeOrder.addEventListener('click',()=>{
+  orderStatus='buyed'
+  localStorage.setItem("orderStatus", orderStatus);
+  window.location.href = "index.html"; 
+})
